@@ -294,3 +294,7 @@ def create_set(params, set_type='train'):
 create_set(get_params(), 'train')
 create_set(get_params(), 'test')
 print("\n")
+
+'''
+Train model using: python -m src.utils.decoder.train --test_results_folder results/length --model_output_path models/length/model.pt --train_dataset data/length/train --test_datasets data/length/test --learning_rate 1e-5 --stop_at_epoch 10 --continue_train models/length/model.pt
+'''
